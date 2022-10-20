@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignIn</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 100vh;
+      }
+
+
+      form {
+        text-align: center;;
+      }
+
+      .row {
+        margin-bottom: 2rem;
+      }
+
+      .title {
+        font-size: 2.5rem;
+      }
+
+      .input {
+        font-size: 1.5rem;
+        padding: 0.5rem;
+        border-radius: 8px;
+        border: 1px solid;
+      }
+
+      .button {
+        background: blue;
+        color: white;
+        border: none;
+        padding: 1rem 2rem;
+        border-radius: 8px;
+        font-size: 1.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+        <div class="login-container">
+            <form>
+                <h1 class="title">Sign In</h1>
+
+                <div class="row">
+                <input class="input" type="text" placeholder="user@example.org" />
+                </div>
+
+                <div class="row">
+                <input class="input" type="password" placeholder="user@example.org" />
+                </div>
+
+                <div class="row">
+                <button class="button">Go!</button>
+                </div>
+            </form>
+        </div>
+    <div class="banner">
+        <img src="https://via.placeholder.com/400" alt="">
+      </div>
+    </div>
+  </body>
+</html>
