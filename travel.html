@@ -1,109 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        html,
-        body {
-            height: 100%;
-        }
-        body {
-            font-family: 'Roboto', sans-serif;
-        }
-        .wrapper {
-            height: 100%;
-        }
-        .wrapper {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 40px 15% 40px;
-        }
-        .item {
-            width: 300px;
-        }
-        .text {
-            line-height: 1.5;
-            margin: 1rem 0;
-        }
-        .subtitle {
-            font-size: 2.5rem;
-            font-weight: 400;
-        }
-        .image {
-            width: 300px;
-        }
-        .link {
-            color: black;
-        }
-        .item:nth-child(2) {
-            align-self: flex-end;
-        }
-    </style>
+      @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
 
-</head>
-<body>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'EB Garamond', serif;
+      }
+      .header {
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        padding-top: 53px;
+        left: 50%;
+        transform: translate(-50%);
+        text-align: center;
+        font-size: 2rem;
+      }
+      html,
+      body {
+        height: 85%;
+      }
+
+      .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0% 40px 1% 40px;
+        height: 100%;
+      }
+      .item {
+        width: 200px;
+        height: 300px;
+      }
+      .Text {
+        line-height: 1.5;
+        margin: 0rem 0;
+        
+      }
+      .subtitle {
+        font-size: 2.5rem;
+        font-weight: 390;
+      }
+      .image {
+        width: 200px;
+        height: 300px;
+      }
+      .link {
+        color: black;
+      }
+      .item:nth-child(2) {
+        align-self: flex-end;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>
+        TRAVEL<br>
+        EXPERIENCE
+      </h1>
+    </div>
 
     <div class="wrapper">
-        <div class="item">
-            <figure class="picture">
-                <img class="image" src="https://via.placeholder.com/300x500" alt="">
-            </figure>
+      <div class="item">
+        <figure class="picture">
+          <img class="image" src="https://images.unsplash.com/photo-1510525009512-ad7fc13eefab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="" />
+        </figure>
 
-            <h2 class="subtitle">
-                01/
-            </h2>
+        <h2 class="subtitle">01/</h2>
 
-            <p class="Text">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, libero soluta tenetur qui eum molestiae similique aspernatur unde porro voluptate, ratione necessitatibus modi id fugit officia nemo odit at dolores!
-            </p>
+        <p align="justify" class="Text">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor,
+          libero soluta tenetur qui eum molestiae!
+        </p>
 
-            <div>
-                <a class="link" href="">Read more</a>
-            </div>
+        <div>
+          <a class="link" href="">Read more</a>
         </div>
-        <div class="item">
-            <figure class="picture">
-                <img class="image" src="https://via.placeholder.com/300x500" alt="">
-            </figure>
+      </div>
+      <div class="item">
+        <figure class="picture">
+          <img class="image" src="https://images.unsplash.com/photo-1627850005124-e10f99a24007?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fG1vdW5hdGluc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60" alt="" />
+        </figure>
 
-            <h2 class="subtitle">
-                02/
-            </h2>
+        <h2 class="subtitle">02/</h2>
 
-            <p class="Text">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, libero soluta tenetur qui eum molestiae similique aspernatur unde porro voluptate, ratione necessitatibus modi id fugit officia nemo odit at dolores!
-            </p>
-            <div>
-                <a class="link" href="">Read more</a>
-            </div>
+        <p align="justify" class="Text">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor,
+          libero soluta tenetur qui eum molestiae!
+        </p>
+        <div>
+          <a class="link" href="">Read more</a>
         </div>
-        <div class="item">
-            <figure class="picture">
-                <img class="image" src="https://via.placeholder.com/300x500" alt="">
-            </figure>
+      </div>
+      <div class="item">
+        <figure class="picture">
+          <img class="image" src="https://images.unsplash.com/photo-1511860810434-a92f84c6f01e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="" />
+        </figure>
 
-            <h2 class="subtitle">
-                03/
-            </h2>
+        <h2 class="subtitle">03/</h2>
 
-            <p class="Text">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, libero soluta tenetur qui eum molestiae similique aspernatur unde porro voluptate, ratione necessitatibus modi id fugit officia nemo odit at dolores!
-            </p>
-            <div>
-                <a class="link" href="">Read more</a>
-            </div>
+        <p align="justify" class="Text">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor,
+          libero soluta tenetur qui eum molestiae!
+        </p>
+        <div>
+          <a class="link" href="">Read more</a>
         </div>
+      </div>
     </div>
-    
-</body>
+  </body>
 </html>
