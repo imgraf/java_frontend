@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      :root {
+        --sidebar-width: 200px;
+      }
+      .menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: var(--sidebar-width);
+        background: gold;
+        transform: translateX(calc(var(--sidebar-width) * -1));
+        transition: all 0.3s ease-out;
+      }
+      .menu--open {
+        transform: none;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      button {
+        background: blue;
+        color: #fff;
+        padding: 1rem 2rem;
+        font-size: 1.5rem;
+        border: none;
+        border-radius: 8px;
+        box-shadow: black;
+        cursor: pointer;
+        transition: all 0.5s ease-out;
+      }
+      button:hover {
+        background: rgb(255, 0, 170);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="menu"></div>
+
+    <header>
+      <h1>About company</h1>
+      <button onclick="toggleMenu()">Menu</button>
+    </header>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. A cupiditate hic
+      consequatur provident quidem sunt voluptatibus ea doloribus? Autem,
+      repellendus asperiores fuga voluptas maiores cumque sint libero, velit a
+      praesentium fugit quae? Reprehenderit voluptatem sunt fugit velit maxime
+      eveniet corporis minima reiciendis recusandae tempore dolore aspernatur,
+      labore minus delectus dolor ducimus accusantium qui laudantium eum quas
+      esse. Voluptas, eveniet repellat est minima, beatae eligendi officiis ex
+      natus nulla et consequatur ducimus culpa labore qui non accusantium
+      doloribus quia corporis iusto? Qui a odit consequatur porro modi delectus,
+      quos praesentium saepe ad placeat molestias cupiditate ullam distinctio
+      ducimus aperiam? Dolorem, perferendis?
+    </p>
+
+    <script>
+      function toggleMenu() {
+        const menu = document.querySelector(".menu");
+        menu.classList.toggle("menu--open");
+      }
+    </script>
+  </body>
+</html>
