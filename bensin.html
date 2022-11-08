@@ -1,132 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Example</title>
 
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body,
+      .warpper {
+        height: 100%;
+      }
+      aside {
+        background: white;
+        height: 100px;
+      }
+      main {
+        background: white;
+        height: 50vh;
+        display: flex;
+        align-items: center;
+        display: grid;
+        grid-template-columns: 400px auto;
+      }
+      h1 {
+        font-size: 4rem;
+      }
+      aside {
+        height: 10vh;
+      }
+      section {
+        background: lightcyan;
+        height: 20vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .wrapper {
+        width: 1280px;
+        grid-template-rows: 100px auto 200px;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+      }
+      aside {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      li {
+        list-style: none;
+        padding: 5px;
+      }
+      li a {
+        color: black;
+        text-decoration: none;
+        font-weight: 200;
+      }
+      .button {
+        background: green;
+        color: blue;
+        padding: 10px;
+        border-radius: 18px;
+      }
+      .apple-button {
+        background: lightgray;
+        padding: 10px;
+        border-radius: 18px;
+      }
+      .google-button {
+        background: lightgray;
+        padding: 10px;
+        border-radius: 18px;
+      }
+      ul {
+        display: flex;
+      }
+      .icon {
+        width: 48px;
+        aspect-ratio: 1;
+        color: black;
+        border: 1px solid;
+        border-radius: 50%;
+        margin-right: 10px;
+        text-decoration: none;
+        font-size: 1.5rem;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+      }
+      @media (max-width: 768px) {
+        .icon,
+        nav {
+          display: none;
         }
-        html,
-        body,
-        .warpper {
-            height: 100%;
-        }
-        aside {
-            background: gold;
-            height: 100px;
-        }
-        main {
-            background: lightgray;
-            height: 50vh;
-        }
-        aside {
-            height: 10vh;
-        }
-        section {
-            background: lightcyan;
-            height: 20vh;
-        }
-        .wrapper {
-            width: 1280px;
-            grid-template-rows: 100px auto 200px;
-        }
-        body {
-            display: flex;
-            justify-content: center;
-        }
-        aside {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            justify-content: right;
-        }
-        li {
-            list-style: none;
-        }
-        li a {
-            color: black;
-            text-decoration: none;
-            font-weight: 600;
-            padding: 10px 40px;
-        }
-        .button {
-            background: green;
-            color: blue;
-            padding: 10px;
-            border-radius: 18px;
-        }
-        ul {
-            display: flex;
-        }
-        .icon {
-            width: 48px;
-            aspect-ratio: 1;
-            color: black;
-            border: 1px solid;
-            border-radius: 50%;
-            margin-right: 10px;
-            text-decoration: none;
-            font-size: 1.5rem;
-            display: inline-flex;
-            justify-content: center;
-            align-items: center;
-        }
-        @media (max-width: 768px) {
-            .icon,
-            nav {
-                display: none;
-            }
-        }
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="warpper">
-        
-        <aside>
-            <figure>
-                <img src="https://via.placeholder.com/150x40" alt="">
-            </figure>
+      <aside>
+        <figure>
+          <img src="https://via.placeholder.com/40x40" alt="" />bensinon
+        </figure>
 
-            <nav>
-                <ul>
-                    <li>
-                        <a href="">Link 1</a>
-                    </li>
-                    <li>
-                        <a href="">Link 2</a>
-                    </li>
-                    <li>
-                        <a href="">Link 3</a>
-                    </li>
-                    <li>
-                        <a href="">Link 1</a>
-                    </li>
-                    <li>
-                        <a href="">Link 1</a>
-                    </li>
-                    <li>
-                        <a href="">Link 1</a>
-                    </li>
-                    
-                    <li>
-                        <a class="button">Link 4</a>
-                    </li>
-                </ul>
-            </nav>
-        </aside>
+        <nav>
+          <ul>
+            <li>
+              <a href="">Home</a>
+            </li>
+            <li>
+              <a href="">Feature</a>
+            </li>
+            <li>
+              <a href="">Screen</a>
+            </li>
+            <li>
+              <a href="">Pricing</a>
+            </li>
+            <li>
+              <a href="">Team</a>
+            </li>
+            <li>
+              <a href="">Question</a>
+            </li>
 
-        <main></main>
-        <div class="icon"></div>
-        <div class="icon"></div>
-        <div class="icon"></div>
+            <li>
+              <a class="button">Get Started</a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
 
-        <section></section>
+      <main>
+        <div class="headline">
+          <h1>Refueling a car at your adress</h1>
+          <p>Delivery service for all types of fuel for your car</p>
+        </div>
+
+        <img
+          class="placeholder"
+          src="https://via.placeholder.com/600x400"
+          alt=""
+        />
+      </main>
+
+      <nav class="store-button">
+        <ul class="ulbutton">
+          <li>
+            <a class="apple-button" href="">Apple Store</a>
+          </li>
+          <li>
+            <a class="google-button" href="">Google Playstore</a>
+          </li>
+        </ul>
+      </nav>
+      <br />
+      <br />
+
+      <div class="icon"></div>
+      <div class="icon"></div>
+      <div class="icon"></div>
+
+      <section>
+        <div class="footer">Specified order</div>
+        <div class="footer">Delivery</div>
+        <div class="footer">Payment types</div>
+      </section>
     </div>
-</body>
+  </body>
 </html>
