@@ -42,6 +42,30 @@
       .footer {
         grid-area: footer;
       }
+      @media (max-width: 768px) {
+        .wrapper {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 70px auto 70px;
+        grid-template-areas:
+          "header header header"
+          "main main main"
+          "footer footer footer";
+        gap: 10px;
+      }
+      .header {
+        grid-area: header;
+      }
+      .main {
+        grid-area: main;
+      }
+      .footer {
+        grid-area: footer;
+      }
+      .sidebar {
+        display: none;
+      }
+      }
     </style>
   </head>
   <body>
